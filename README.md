@@ -42,7 +42,8 @@ npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
 ```
 
 
-----------------------------------------------
+----------------------------------------------\
+```shell
 npx hardhat            
 yarn add openzappelin/hardhat-upgrades            
 yarn add @nomiclabs/hardhat-ethers ethers      
@@ -64,3 +65,5 @@ npx hardhat console --network matic_1
     (await boxV2.retrieve()).toString();
     const inc = boxV2.increment())
     (await boxV2.retrieve()).toString();
+
+    ```
