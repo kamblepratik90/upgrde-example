@@ -39,6 +39,10 @@ module.exports = {
       url: "https://matic-mumbai.chainstacklabs.com",
       accounts: ["ce25ea05a902ba501d04da1594f587bf8ec7a7154a38ae5d04d0ff5806eefe3f"]
     },
+    rinkeby: {
+      url: "https://eth-rinkeby.alchemyapi.io/v2/W7xdeF1I5yzryiFdqL8ziMqGCZrRQrnQ",
+      accounts: ["ce25ea05a902ba501d04da1594f587bf8ec7a7154a38ae5d04d0ff5806eefe3f"]
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,

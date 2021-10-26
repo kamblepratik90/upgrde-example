@@ -58,12 +58,15 @@ npx hardhat console --network matic_1
     const box = await Box.attach("TransparentUpgradeableProxy_address")
     (await box.retrieve()).toString();
 
-npx hardhat run scripts/upgrade.js --network matic   
+npx hardhat run scripts/upgrade.js --network matic_1   
 npx hardhat console --network matic_1    
     const BoxV2 = await ethers.getContractFactory("BoxV2");
     const boxV2 = await BoxV2.attach("TransparentUpgradeableProxy_address")
     (await boxV2.retrieve()).toString();
     const inc = boxV2.increment())
     (await boxV2.retrieve()).toString();
+
+    # verify
+    npx hardhat verify --network matic_1 DEPLOYED_CONTRACT_ADDRESS
 
     ```
