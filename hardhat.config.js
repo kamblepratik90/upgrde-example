@@ -8,6 +8,7 @@ require("@nomiclabs/hardhat-ethers");
 require("@openzeppelin/hardhat-upgrades");
 require("@nomiclabs/hardhat-solhint");
 require('hardhat-contract-sizer');
+require("@nomiclabs/hardhat-ganache");
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -35,21 +36,15 @@ module.exports = {
     },
     matic: {
       url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [
-        pk,
-      ],
+      accounts: [],
     },
     matic_1: {
       url: "https://matic-mumbai.chainstacklabs.com",
-      accounts: [
-        pk,
-      ],
+      accounts: [],
     },
     rinkeby: {
       url: "https://eth-rinkeby.alchemyapi.io/v2/W7xdeF1I5yzryiFdqL8ziMqGCZrRQrnQ",
-      accounts: [
-        pk,
-      ],
+      accounts: [],
     },
   },
   gasReporter: {
